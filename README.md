@@ -9,3 +9,5 @@ A Elipsis Digital Interview Challenge
 * [ ] Create a `config.js` file inside `/config` following the example on `config.js.example`
 * [ ] Run the expo app using `expo start`
 * [ ] Enjoy 🙂
+
+#### PS: There was no Design for the `Navigation Screen` so I left it out.
