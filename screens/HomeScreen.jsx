@@ -2,7 +2,6 @@ import { ActivityIndicator, Image, ImageBackground, StyleSheet, Text, View } fro
 import React, { useEffect, useState } from "react";
 import { Ionicons, Feather, EvilIcons, Fontisto } from "@expo/vector-icons";
 import dayjs from "dayjs";
-import { OPEN_WEATHER_MAP_API_KEY } from "../config/config";
 import { getCityWeather } from "../api";
 
 const HomeScreen = () => {
