@@ -1,4 +1,11 @@
-import { ActivityIndicator, Image, ImageBackground, StyleSheet, Text, View } from "react-native";
+import {
+	ActivityIndicator,
+	Image,
+	ImageBackground,
+	StyleSheet,
+	Text,
+	View,
+} from "react-native";
 import React, { useEffect, useState } from "react";
 import { Ionicons, Feather, EvilIcons, Fontisto } from "@expo/vector-icons";
 import dayjs from "dayjs";
@@ -48,7 +55,7 @@ const HomeScreen = () => {
 					</View>
 					<View style={styles.whetherContainer}>
 						<Image
-							source={{ uri: whetherIcon }}
+							source={{ uri: `${whetherIcon}` }}
 							style={styles.whetherIcon}
 						/>
 					</View>
@@ -120,9 +127,11 @@ const HomeScreen = () => {
 					</View>
 				</>
 			)}
-			{!weather && <View style={styles.container}>
-                <ActivityIndicator size="large" color="#FFB200" />
-            </View>}
+			{!weather && (
+				<View style={styles.container}>
+					<ActivityIndicator size="large" color="#FFB200" />
+				</View>
+			)}
 		</ImageBackground>
 	);
 };
@@ -130,11 +139,11 @@ const HomeScreen = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-    },
+	container: {
+		flex: 1,
+		alignItems: "center",
+		justifyContent: "center",
+	},
 	background: {
 		flex: 1,
 		alignItems: "center",
@@ -150,7 +159,7 @@ const styles = StyleSheet.create({
 		fontSize: 30,
 		paddingLeft: 10,
 		fontWeight: "bold",
-        fontFamily: "CabinBold",
+		fontFamily: "CabinBold",
 	},
 	whetherContainer: {
 		marginTop: 20,
@@ -166,32 +175,32 @@ const styles = StyleSheet.create({
 	temperatureText: {
 		fontSize: 130,
 		color: "#FFFFFF",
-        fontFamily: "CabinBold",
+		fontFamily: "CabinBold",
 		fontWeight: "bold",
 		lineHeight: 130,
 	},
 	temperatureUnits: {
 		fontSize: 40,
 		color: "#FFFFFF",
-        fontFamily: "CabinBold",
+		fontFamily: "CabinBold",
 		fontWeight: "bold",
 		marginLeft: 20,
 	},
 	subText: {
 		color: "#FFFFFF",
-        fontFamily: "CabinRegular",
+		fontFamily: "CabinRegular",
 		fontSize: 20,
 	},
 	subTemperature: {
 		color: "#FFB200",
 		fontSize: 20,
-        fontFamily: "CabinRegular",
+		fontFamily: "CabinRegular",
 		marginLeft: 10,
 	},
 	conditionText: {
 		color: "#FFFFFF",
 		fontSize: 20,
-        fontFamily: "CabinBold",
+		fontFamily: "CabinBold",
 		fontWeight: "bold",
 		textTransform: "capitalize",
 	},
@@ -214,7 +223,7 @@ const styles = StyleSheet.create({
 		color: "#FFFFFF",
 		fontSize: 16,
 		marginLeft: 20,
-        fontFamily: "CabinBold",
+		fontFamily: "CabinBold",
 		fontWeight: "bold",
 	},
 });

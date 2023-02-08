@@ -6,7 +6,7 @@ import HomeScreen from "./screens/HomeScreen";
 import SearchScreen from "./screens/SearchScreen";
 import { Ionicons } from "@expo/vector-icons";
 import { useFonts } from "expo-font";
-import { useCallback, useEffect } from "react";
+import { useCallback } from "react";
 import * as SplashScreen from "expo-splash-screen";
 
 SplashScreen.preventAutoHideAsync();
