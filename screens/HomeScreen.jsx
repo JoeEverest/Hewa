@@ -10,7 +10,7 @@ const HomeScreen = () => {
 
 	const [weather, setWeather] = useState(null);
 
-	const [city, setCity] = useState("Arusha");
+	const [city, setCity] = useState("Dar Es Salaam"); //Future proofing, maybe use location to get user's city
 
 	const fetchWeather = () => {
 		getCityWeather({ city }, (data) => {
