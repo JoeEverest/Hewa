@@ -95,7 +95,7 @@ const SearchScreen = () => {
 							</View>
 							<View style={styles.whetherContainer}>
 								<Image
-									source={{ uri: whetherIcon }}
+									source={{ uri: `${whetherIcon}` }}
 									style={styles.whetherIcon}
 								/>
 							</View>
@@ -205,6 +205,7 @@ const styles = StyleSheet.create({
 		borderRadius: 10,
 		color: "#FFFFFF",
 		fontSize: 18,
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 	},
 	searchButton: {
@@ -219,6 +220,7 @@ const styles = StyleSheet.create({
 	},
 	searchButtonText: {
 		fontSize: 18,
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 		color: "#FFFFFF",
 		marginLeft: 10,
@@ -237,6 +239,7 @@ const styles = StyleSheet.create({
 		color: "#FFFFFF",
 		fontSize: 30,
 		paddingLeft: 10,
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 	},
 	whetherContainer: {
@@ -252,27 +255,32 @@ const styles = StyleSheet.create({
 	temperatureText: {
 		fontSize: 130,
 		color: "#FFFFFF",
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 		lineHeight: 130,
 	},
 	temperatureUnits: {
 		fontSize: 40,
 		color: "#FFFFFF",
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 		marginLeft: 20,
 	},
 	subText: {
+        fontFamily: "CabinRegular",
 		color: "#FFFFFF",
 		fontSize: 20,
 	},
 	subTemperature: {
 		color: "#FFB200",
+        fontFamily: "CabinRegular",
 		fontSize: 20,
 		marginLeft: 10,
 	},
 	conditionText: {
 		color: "#FFFFFF",
 		fontSize: 20,
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 		textTransform: "capitalize",
 	},
@@ -295,6 +303,7 @@ const styles = StyleSheet.create({
 		color: "#FFFFFF",
 		fontSize: 16,
 		marginLeft: 20,
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 	},
 });

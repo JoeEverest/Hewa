@@ -150,6 +150,7 @@ const styles = StyleSheet.create({
 		fontSize: 30,
 		paddingLeft: 10,
 		fontWeight: "bold",
+        fontFamily: "CabinBold",
 	},
 	whetherContainer: {
 		marginTop: 20,
@@ -165,27 +166,32 @@ const styles = StyleSheet.create({
 	temperatureText: {
 		fontSize: 130,
 		color: "#FFFFFF",
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 		lineHeight: 130,
 	},
 	temperatureUnits: {
 		fontSize: 40,
 		color: "#FFFFFF",
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 		marginLeft: 20,
 	},
 	subText: {
 		color: "#FFFFFF",
+        fontFamily: "CabinRegular",
 		fontSize: 20,
 	},
 	subTemperature: {
 		color: "#FFB200",
 		fontSize: 20,
+        fontFamily: "CabinRegular",
 		marginLeft: 10,
 	},
 	conditionText: {
 		color: "#FFFFFF",
 		fontSize: 20,
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 		textTransform: "capitalize",
 	},
@@ -208,6 +214,7 @@ const styles = StyleSheet.create({
 		color: "#FFFFFF",
 		fontSize: 16,
 		marginLeft: 20,
+        fontFamily: "CabinBold",
 		fontWeight: "bold",
 	},
 });
