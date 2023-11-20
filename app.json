@@ -1,39 +1,45 @@
 {
-  "expo": {
-    "name": "Hewa",
-    "slug": "Hewa",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.joeeverest.Hewa"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "32c05330-dddc-4062-8cdb-1146e1b1f5b9"
-      }
-    }
-  }
+	"expo": {
+		"name": "Hewa",
+		"slug": "Hewa",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"userInterfaceStyle": "light",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "cover",
+			"backgroundColor": "#ffffff"
+		},
+		"plugins": [
+			[
+				"expo-location",
+				{
+					"locationWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+				}
+			]
+		],
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#FFFFFF"
+			},
+			"package": "com.joeeverest.Hewa"
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		},
+		"extra": {
+			"eas": {
+				"projectId": "32c05330-dddc-4062-8cdb-1146e1b1f5b9"
+			}
+		}
+	}
 }
